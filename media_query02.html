@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html01</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+            padding-left: 33px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid #article {
+            padding-left: 25px;
+        }
+        @media(max-width: 800px){
+            #grid {
+                display: block;
+            }
+            #grid ol {
+                border-right: none;
+            }
+            h1 {
+                border-bottom: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>WEB</h1>
+    <div id="grid">
+        <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        </ol>
+        <div id="article">
+            <h2>HTML</h2>
+            Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.<br>
+            <br>
+        </div>
+    </div>
+</body>
